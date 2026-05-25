@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Course Registration System</div>
+
+  <nav>
+    <a href="#" class="active">Home</a>
+    <a href="register.html">Register</a>
+    <a href="enrolled.html">Enrolled</a>
+    <a href="courses.html">Courses</a>
+  </nav>
+
+  <div class="profile">◉</div>
+</header>
+
+<section class="hero">
+  <h1>Welcome, Academic Portal</h1>
+
+  <p>
+    Select a management module below to manage registrations,
+    browse the academic catalog, or review student enrollment records.
+  </p>
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <div class="icon">📝</div>
+
+    <h2>Register a Course</h2>
+
+    <p>
+      Start a new enrollment for the upcoming semester.
+    </p>
+
+    <button onclick="goRegister()">
+      Get Started →
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="icon">📚</div>
+
+    <h2>Available Courses</h2>
+
+    <p>
+      Browse through our extensive academic catalog.
+    </p>
+
+    <button onclick="goCourses()">
+      Explore Catalog →
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="icon">👨‍🎓</div>
+
+    <h2>Enrolled Students</h2>
+
+    <p>
+      Manage and review current student enrollment lists.
+    </p>
+
+    <button onclick="goEnrolled()">
+      View Records →
+    </button>
+  </div>
+
+</section>
+
+<script src="home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+function goRegister(){
+  window.location.href = "register.html";
+}
+
+function goCourses(){
+  window.location.href = "courses.html";
+}
+
+function goEnrolled(){
+  window.location.href = "enrolled.html";
+}
