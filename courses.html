@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Registration System - Courses</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
 </head>
 <body>
     <nav class="navbar">
@@ -23,10 +24,10 @@
     </nav>
 
     <main class="container">
-        <div class="banner" style="background-image: url('courses_banner.png'); margin-top: 0; min-height: 280px; align-items: center;">
-            <div class="banner-content" style="max-width: 100%;">
-                <h2 style="font-size: 3rem;">Available Courses</h2>
-                <p style="font-size: 1.25rem;">Explore our current curriculum and find your next learning path.</p>
+        <div class="banner courses-banner">
+            <div class="banner-content courses-banner-content">
+                <h2 class="courses-banner-title">Available Courses</h2>
+                <p class="courses-banner-subtitle">Explore our current curriculum and find your next learning path.</p>
             </div>
         </div>
 
@@ -45,75 +46,75 @@
                         <th>Status</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td style="font-weight: 600; color: var(--text-muted);">CS101</td>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td class="course-id">CS101</td>
                         <td class="table-title">Introduction to Computer Science</td>
                         <td>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted);">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                            <div class="course-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-sm"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
                                 Dr. Sarah Jenkins
                             </div>
                         </td>
                         <td>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted);">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div class="course-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-sm"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                 12 weeks
                             </div>
                         </td>
                         <td><span class="status-badge">OPEN</span></td>
                     </tr>
                     <tr>
-                        <td style="font-weight: 600; color: var(--text-muted);">DES204</td>
+                        <td class="course-id">DES204</td>
                         <td class="table-title">UI/UX Design Systems</td>
                         <td>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted);">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                            <div class="course-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-sm"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
                                 Prof. Alex Rivera
                             </div>
                         </td>
                         <td>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted);">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div class="course-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-sm"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                 8 weeks
                             </div>
                         </td>
                         <td><span class="status-badge">OPEN</span></td>
                     </tr>
                     <tr>
-                        <td style="font-weight: 600; color: var(--text-muted);">BUS302</td>
+                        <td class="course-id">BUS302</td>
                         <td class="table-title">Business Management Essentials</td>
                         <td>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted);">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                            <div class="course-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-sm"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
                                 Michael Thompson
                             </div>
                         </td>
                         <td>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted);">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div class="course-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-sm"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                 10 weeks
                             </div>
                         </td>
                         <td><span class="status-badge">OPEN</span></td>
                     </tr>
                     <tr>
-                        <td style="font-weight: 600; color: var(--text-muted);">ENG105</td>
+                        <td class="course-id">ENG105</td>
                         <td class="table-title">Advanced Academic Writing</td>
                         <td>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted);">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                            <div class="course-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-sm"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
                                 Dr. Emily Watson
                             </div>
                         </td>
                         <td>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted);">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div class="course-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-sm"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                 6 weeks
                             </div>
                         </td>
                         <td><span class="status-badge">OPEN</span></td>
-                    </tr>
+                    </tr> --->
                 </tbody>
             </table>
         </div>
@@ -159,5 +160,7 @@
             <a href="#">Academic Support</a>
         </div>
     </footer>
+
+    <script src="courses.js"></script>
 </body>
 </html>

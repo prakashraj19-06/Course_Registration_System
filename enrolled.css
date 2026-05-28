@@ -1,0 +1,40 @@
+.enrolled-table{
+    width: 100%;
+}
+
+/* enrolled.css */
+.enrolled-table-header {
+    width: 100%;
+    height: 65px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr);  */
+    padding: 1.5rem 2rem;
+    border-bottom: 3px solid #bebebe;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.enrolled-table-header th{
+    padding-left: 120px ;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size:small;
+}
+
+.enrolled-card-icon {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--primary);
+}
+
+.enrolled tr td{
+      padding-left: 120px ;
+      width: 30%;
+}
+
+.enrolled-name {
+    font-weight:510;
+}
+

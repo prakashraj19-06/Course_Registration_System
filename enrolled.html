@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Registration System - Enrolled</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enrolled.css">
 </head>
 <body>
     <nav class="navbar">
@@ -29,29 +30,21 @@
         </div>
 
         <div class="main-card">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border-color); font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; background-color: #f9fafb;">
-                <div>Name</div>
-                <div>Email ID</div>
-                <div>Course Name</div>
-            </div>
-            <div class="error-state">
-                <div class="error-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="margin: 0 auto;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                    </svg>
-                </div>
-                <div class="error-text">
-                    Failed to load student data. Please ensure the server is running at localhost:8080.
-                </div>
-                <button class="btn-primary" style="width: auto;">
-                    Retry Connection
-                </button>
-            </div>
+          <table class="data-table">
+                  <tr class="enrolled-table-header">
+                    <th>Name</th>
+                    <th>Email ID</th>
+                    <th>Course Name</th>
+                  </tr>
+              <tbody id="tableData" class="enrolled">
+
+              </tbody>
+          </table>
         </div>
 
         <div class="grid-3">
             <div class="card">
-                <div class="card-icon" style="background-color: transparent; border: 1px solid var(--border-color); color: var(--primary);">
+                <div class="card-icon enrolled-card-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
                     </svg>
@@ -61,7 +54,7 @@
             </div>
 
             <div class="card">
-                <div class="card-icon" style="background-color: transparent; border: 1px solid var(--border-color); color: var(--primary);">
+                <div class="card-icon enrolled-card-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
                     </svg>
@@ -71,7 +64,7 @@
             </div>
 
             <div class="card">
-                <div class="card-icon" style="background-color: transparent; border: 1px solid var(--border-color); color: var(--primary);">
+                <div class="card-icon enrolled-card-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                     </svg>
@@ -81,5 +74,6 @@
             </div>
         </div>
     </main>
+    <script src="enrolled.js"></script>
 </body>
 </html>

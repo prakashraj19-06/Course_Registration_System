@@ -1,0 +1,9 @@
+/* index.css */
+.icon-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.index-banner {
+    background-image: url('library_banner.png');
+}

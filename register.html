@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Registration System - Login</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="register.css">
 </head>
-<body style="min-height: 100vh; overflow-x: hidden;">
+<body class="register-page">
     <nav class="navbar">
         <a href="index.html" class="brand">Course Registration System</a>
         <div class="nav-links">
@@ -25,32 +26,29 @@
     <div class="split-layout">
         <div class="split-left">
             <div class="auth-form">
-                <div class="brand" style="margin-bottom: 2rem;">Course Registration</div>
+                <div class="brand auth-brand">Course Registration</div>
                 <h1>WELCOME BACK!</h1>
                 <p>Don't have an account, <a href="#">Sign up</a></p>
                 
-                <form onsubmit="event.preventDefault();">
-                    <div class="form-group">
+                <form action="http://localhost:8080/courses/register" method="post">
+                    <div class="form-group" action="http://localhost:8080/courses/register" method="post">
                         <label class="form-label">NAME</label>
-                        <input type="text" class="form-input" placeholder="example@email.com">
+                        <input type="text" class="form-input" placeholder="enter name" name="name" required>
                     </div>
                     
-                    <div class="form-group">
-                        <label class="form-label">NAME</label>
-                        <input type="text" class="form-input" placeholder="example@email.com">
+                    <div class="form-group" action="http://localhost:8080/courses/register" method="post">
+                        <label class="form-label">EMAIL ID</label>
+                        <input type="text" class="form-input" placeholder="example@email.com" name="emailId" required>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" action="http://localhost:8080/courses/register" method="post">
                         <label class="form-label">COURSE</label>
-                        <select class="form-input" style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236b7280%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem top 50%; background-size: 0.65rem auto;">
-                            <option value="">Select a course</option>
-                            <option value="cs101">Introduction to Computer Science</option>
-                            <option value="des204">UI/UX Design Systems</option>
-                            <option value="bus302">Business Management Essentials</option>
+                        <select class="form-input course-select" id="course-option" name="courseName" required>
+                               <option value="">Select a course</option>
                         </select>
                     </div>
 
-                    <button type="submit" class="btn-primary" style="margin-top: 1rem; padding: 1rem; font-size: 1.1rem; text-transform: uppercase;">
+                    <button type="submit" class="btn-primary submit-btn">
                         Sign In
                     </button>
                 </form>
@@ -61,17 +59,17 @@
                 <img src="panda_avatar.png" alt="Panda Avatar" class="avatar-image">
                 <div class="avatar-actions">
                     <button class="avatar-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 20px; height: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="avatar-svg">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                         </svg>
                     </button>
                     <button class="avatar-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 20px; height: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="avatar-svg">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
                         </svg>
                     </button>
                     <button class="avatar-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 20px; height: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="avatar-svg">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
                         </svg>
                     </button>
@@ -79,7 +77,7 @@
             </div>
         </div>
     </div>
-    <footer style="margin-top: 0;">
+    <footer class="register-footer">
         <div>&copy; 2024 Course Registration System. All rights reserved.</div>
         <div class="footer-links">
             <a href="#">Privacy Policy</a>
@@ -88,5 +86,6 @@
             <a href="#">Community</a>
         </div>
     </footer>
+    <script src="register.js"></script>
 </body>
 </html>

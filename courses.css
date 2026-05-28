@@ -1,0 +1,36 @@
+/* courses.css */
+.icon-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.courses-banner {
+    background-image: url('courses_banner.png');
+    margin-top: 0;
+    min-height: 280px;
+    align-items: center;
+}
+
+.courses-banner-content {
+    max-width: 100%;
+}
+
+.courses-banner-title {
+    font-size: 3rem;
+}
+
+.courses-banner-subtitle {
+    font-size: 1.25rem;
+}
+
+.course-id {
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+}
