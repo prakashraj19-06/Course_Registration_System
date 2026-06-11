@@ -6,7 +6,7 @@ let selectOption = document.getElementById("course-option");
 
 function courseOption(){
 
-    fetch("http://localhost:8080/courses")
+    fetch("course-registration-backend-production-614b.up.railway.app/courses")
     .then((data) => data.json())
     .then((resps) => {
         console.log(resps);

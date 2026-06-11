@@ -6,7 +6,7 @@ let tableData = document.getElementById("tableData");
 
 function enroll(){
 
-    fetch("http://localhost:8080/courses/enrolled")
+    fetch("course-registration-backend-production-614b.up.railway.app/courses/enrolled")
     .then((data) => data.json())
     .then((resps) => {
        

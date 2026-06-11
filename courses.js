@@ -5,7 +5,7 @@ window.onload = function(){
 let tBody = document.getElementById("tbody");
 
 function courses(){
-    fetch("http://localhost:8080/courses")
+    fetch("course-registration-backend-production-614b.up.railway.app/courses")
     .then((resp) => resp.json())
     .then((courses) => {
        
