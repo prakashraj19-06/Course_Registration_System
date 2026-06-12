@@ -2,10 +2,11 @@ window.onload = function(){
     courses();
 }
 
+const url ="https://course-registration-backend-production-614b.up.railway.app";
 let tBody = document.getElementById("tbody");
 
 function courses(){
-    fetch("course-registration-backend-production-614b.up.railway.app/courses")
+    fetch(`${url}/courses`)
     .then((resp) => resp.json())
     .then((courses) => {
        

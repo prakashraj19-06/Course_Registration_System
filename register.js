@@ -3,10 +3,11 @@ window.onload = function(){
 }
 
 let selectOption = document.getElementById("course-option");
+const url ="https://course-registration-backend-production-614b.up.railway.app";
 
 function courseOption(){
 
-    fetch("course-registration-backend-production-614b.up.railway.app/courses")
+    fetch(`${url}/courses`)
     .then((data) => data.json())
     .then((resps) => {
         console.log(resps);
