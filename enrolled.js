@@ -2,7 +2,7 @@ window.onload = function(){
     enroll();
 }
 
-const url ="https://course-registration-backend-production-614b.up.railway.app";
+const url ="http://localhost:8080";
 let tableData = document.getElementById("tableData");
 
 function enroll(){

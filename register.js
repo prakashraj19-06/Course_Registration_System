@@ -3,15 +3,13 @@ window.onload = function(){
 }
 
 let selectOption = document.getElementById("course-option");
-const url ="https://course-registration-backend-production-614b.up.railway.app";
+const url ="http://localhost:8080";
 
 function courseOption(){
 
     fetch(`${url}/courses`)
     .then((data) => data.json())
-    .then((resps) => {
-        console.log(resps);
-       
+    .then((resps) => {       
        resps.forEach(resp => {
          let row =`<option value="${resp.courseId}">${resp.courseName}</option>`;
 
